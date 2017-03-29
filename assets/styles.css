@@ -93,7 +93,6 @@ img{
     height: 100%;
 }
 
-
 .cloud-invert{
     transform: rotate(180deg);
 }
@@ -175,7 +174,7 @@ img{
     margin: 30px 0 70px 0;
 }
 /*----------------------------------------
-FONTS
+FONT
 -----------------------------------------*/
 @font-face {
     font-family: "museo-sans-rounded";
@@ -184,7 +183,7 @@ FONTS
 }
 
 /*----------------------------------------
-FONTS
+MEDIA QUERIES
 -----------------------------------------*/
 @media (max-width: 480px) {
     body h1,h2,h3,p{
