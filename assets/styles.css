@@ -1,0 +1,228 @@
+*, *:before, *:after {
+    box-sizing: border-box; }
+/*
+*{
+border: 1px solid red;
+}
+*/
+body{
+    font-family: "museo-sans-rounded", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 47px;
+    margin: 0;
+}
+.container{
+    max-width: 1440px; 
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    width: 100%;
+}
+.center{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /*    justify-content: center;*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.align-left{
+    text-align: left;
+}
+.col{
+    display: inline-block;
+}
+.row{
+    text-align: center;
+    padding: 70px 0;
+    width: 100%;
+}
+.col-1{
+    width: 30%;
+}
+.col-2{
+    width: 70%;
+}
+.col-3{
+    width: 50%;
+}
+.ion-heart{
+    color: #e32828;
+    margin: 0 10px;
+}
+a{
+    color: #3c91b1;
+    text-decoration: none;
+    display: inline-block; 
+}
+a:hover {
+    color: #71aabe;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+.blue{
+    background-color: rgb(141, 203, 245);
+    color: #fff;
+    text-shadow: 1px 1px #a8a8a8;
+}
+.blue a{
+    text-shadow: none;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cloud-invert{
+    transform: rotate(180deg);
+}
+#clouds{
+    fill: #fff;
+    background-color: rgb(141, 203, 245);
+}
+
+/*SITES*/
+#sites .row{
+    padding: 30px 0 0 0;
+}
+.site-feature-box{
+    width: 27%;
+    margin: 0 15px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+.site-feature-box a,
+.site-feature-box .site-feature{
+    height: 100%;
+    width: 100%;
+}
+.site-feature{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    height: 150px;
+    background-size:cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 62px -23px rgba(0,0,0,0.72);
+    -moz-box-shadow: 0px 0px 62px -23px rgba(0,0,0,0.72);
+    box-shadow: 0px 0px 62px -23px rgba(0,0,0,0.72);
+    transition: all 0.5s ease;
+
+}
+.site-feature h3{
+    font-weight: lighter;
+}
+.site-feature:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer; 
+    cursor: hand; 
+
+}
+#first-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.8)), url(img/brainfriendz.jpg) ;
+
+}
+#second-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.8)), url(img/artofweddings.jpg) ;
+
+}
+#third-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.8)), url(img/decorlessons.jpg) ;
+
+}
+#fourth-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.9)), url(img/wedmotions.jpg) ;
+
+}
+#fifth-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.9)), url(img/sas.jpg) ;
+
+}
+#sixth-site{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.9)), url(img/sas-form.jpg) ;
+}
+.pssst{
+    color: #8e8e8e;
+    margin: 30px 0 70px 0;
+}
+/*----------------------------------------
+FONTS
+-----------------------------------------*/
+@font-face {
+    font-family: "museo-sans-rounded";
+    src: url(fonts/MuseoSansRounded700.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/*----------------------------------------
+FONTS
+-----------------------------------------*/
+@media (max-width: 768px) {
+    body h1,h2,h3,p{
+        font-size: 1.8rem;
+    }
+    .col{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        display: block;
+    }
+    #clouds{
+        display: none;
+    }
+    .site-feature-box{
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+    }
+    #sites .row{
+        padding: 0;
+    }
+    #sites{
+        padding: 50px 0;
+    }
+    img#traveler{
+        width: 50%;
+    }
+    img#builder{
+        width: 70%;
+    }
+    img#cat-eyes{
+        width: 35%;
+    }
+}
+
+/*scale the cloads */
+
