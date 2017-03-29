@@ -54,9 +54,8 @@ section{
 .col-3{
     width: 50%;
 }
-.ion-heart{
-    color: #e32828;
-    margin: 0 10px;
+.love{
+    max-width: 50px;
 }
 a{
     color: #3c91b1;
@@ -187,6 +186,11 @@ FONTS
 /*----------------------------------------
 FONTS
 -----------------------------------------*/
+@media (max-width: 480px) {
+    body h1,h2,h3,p{
+        line-height: 35px;
+    }
+}
 @media (max-width: 768px) {
     body h1,h2,h3,p{
         font-size: 1.8rem;
@@ -201,6 +205,9 @@ FONTS
     }
     #clouds{
         display: none;
+    }
+    .love{
+        max-width: 30px;
     }
     .site-feature-box{
         display: block;
