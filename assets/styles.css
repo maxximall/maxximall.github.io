@@ -78,7 +78,9 @@ img{
 .blue a{
     text-shadow: none;
 }
-
+.video .col{
+    width: 100%;
+}
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
