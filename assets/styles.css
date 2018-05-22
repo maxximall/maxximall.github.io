@@ -91,7 +91,7 @@ footer,
 }
 /*--- SITES ---*/
 #sites .row{
-    padding: 30px 0 0 0;
+    padding: 50px 0 0 0;
 }
 #sites .container{
     border-top-left-radius: 30% 10%;
@@ -209,9 +209,13 @@ MEDIA QUERIES
     }
     
 }
+}
 @media (max-width: 480px) {
-    body h1,h2,h3,p{
+    h1{
         font-size: 1.3rem;
+    }
+    h2,h3,p{
+        font-size: 1.2rem;
     }
     #sites{
         padding: 0;
