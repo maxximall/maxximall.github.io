@@ -1,16 +1,13 @@
 *, *:before, *:after {
-    box-sizing: border-box; }
-/*
-*{
-border: 1px solid red;
+    box-sizing: border-box; 
 }
-*/
+
 body{
-    font-family: "museo-sans-rounded", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #5a5a5a;
-    line-height: 47px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+    padding: 0;
     margin: 0;
 }
 .container{
@@ -42,7 +39,7 @@ section{
 }
 .row{
     text-align: center;
-    padding: 70px 0;
+    padding: 50px 0;
     width: 100%;
 }
 .col-1{
@@ -53,9 +50,6 @@ section{
 }
 .col-3{
     width: 50%;
-}
-.love{
-    max-width: 40px;
 }
 a{
     color: #3c91b1;
@@ -70,43 +64,39 @@ a:hover {
 img{
     max-width: 100%;
 }
-.blue{
-    background-color: rgb(141, 203, 245);
-    color: #fff;
-    text-shadow: 1px 1px #a8a8a8;
+h1{
+    margin-bottom: 1rem;
+    color: #2f2c36;
+    font-size: 2.2rem;
+    font-weight: 500;
 }
-.blue a{
-    text-shadow: none;
+h2{
+    color: #56526182;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom:50px;
 }
-.video .col{
-    width: 70%;
-    margin: 0 auto;
+#intro,
+footer,
+#sites .container{
+    background-color:aliceblue;
 }
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+#intro .wrapper, 
+#sites{
+    background-color: #fff;
 }
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+#intro .wrapper{
+    border-bottom-right-radius: 30% 30%;
     width: 100%;
-    height: 100%;
 }
-
-.cloud-invert{
-    transform: rotate(180deg);
-}
-#clouds{
-    fill: #fff;
-    background-color: rgb(141, 203, 245);
-}
-
-/*SITES*/
+/*--- SITES ---*/
 #sites .row{
     padding: 30px 0 0 0;
+}
+#sites .container{
+    border-top-left-radius: 30% 10%;
+    width: 100%;
+    padding: 0 0 70px 0;
 }
 .site-feature-box{
     width: 27%;
@@ -114,6 +104,7 @@ img{
     height: 200px;
     display: inline-block;
     overflow: hidden;
+    border-radius: 2%;
 }
 .site-feature-box a,
 .site-feature-box .site-feature{
@@ -172,30 +163,24 @@ img{
 #sixth-site{
     background-image: linear-gradient(rgba(242, 242, 242, 0.6),rgba(60, 145, 177, 0.9)), url(img/sas-form.jpg) ;
 }
-.pssst{
-    color: #8e8e8e;
-    margin: 30px 0 70px 0;
-}
-/*----------------------------------------
-FONT
------------------------------------------*/
-@font-face {
-    font-family: "museo-sans-rounded";
-    src: url(fonts/MuseoSansRounded700.ttf) format('truetype');
-    font-weight: normal;
+/*--- FOOTER ---*/
+footer .wrapper{
+    border-radius: 15% 55% 0 0;
+    background-color: #fff;
+    width: 100%;
 }
 
 /*----------------------------------------
 MEDIA QUERIES
 -----------------------------------------*/
-@media (max-width: 480px) {
-    body h1,h2,h3,p{
-        line-height: 35px;
-    }
-}
+
 @media (max-width: 768px) {
     body h1,h2,h3,p{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    h2{
+        padding: 50px 0 0 0;
+        margin: 0;
     }
     .col{
         display: block;
@@ -205,14 +190,14 @@ MEDIA QUERIES
     .row{
         display: block;
     }
-    #clouds{
-        display: none;
+    #intro .wrapper{
+        border-radius: 0 0 28% 0;
     }
-    .video .col{
-        width: 90%;
+    #sites .container{
+        border-top-left-radius: 30% 5%;
     }
-    .love{
-        max-width: 30px;
+    footer .wrapper{
+        border-radius: 0 35% 0 0;
     }
     .site-feature-box{
         display: block;
@@ -222,19 +207,15 @@ MEDIA QUERIES
     #sites .row{
         padding: 0;
     }
+    
+}
+@media (max-width: 480px) {
+    body h1,h2,h3,p{
+        font-size: 1.3rem;
+    }
     #sites{
-        padding: 50px 0;
-    }
-    img#traveler{
-        max-height: 330px;
-    }
-    img#builder{
-        width: 70%;
-    }
-    img#cat-eyes{
-        width: 35%;
+        padding: 0;
     }
 }
-
 /*scale the cloads */
 
